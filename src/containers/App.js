@@ -21,7 +21,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {value: 'de'};
+    this.state = {value: ''};
   }
   onChange(event) {
     this.setState({value: event.target.value});

@@ -22,7 +22,7 @@ class HeroesLists extends Component {
     
   }
 
-componentDidMount() {
+  componentDidUpdate() {
   let text = this.props.search
   console.log(text)
   getHeroes(text)
@@ -32,7 +32,7 @@ componentDidMount() {
           loading: false,
         });
       })
-      .catch((err) => console.log(err));
+      .catch((err) =>console.log(err));
   }
 
 renderHeroes = () => {
